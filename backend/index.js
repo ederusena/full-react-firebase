@@ -20,6 +20,10 @@ admin
     snapShot.ref.update({ atualizado: true });
 });
 
+admin.firestore().collection('usuarios').onSnapshot(snapshot => {
+  
+});
+
 express()
   .use(express.static(path.join(__dirname, 'assets')))
   .get('/users', async (req, res) => {
