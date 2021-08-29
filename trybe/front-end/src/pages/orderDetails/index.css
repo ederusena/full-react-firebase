@@ -1,0 +1,59 @@
+.orderDetailsPage {
+  background-image: url('../../images/newBg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detailsHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3% 3%;
+  font-size: larger;
+}
+.detailsHeader .orderTitle {
+  font-size: xx-large;
+  margin: 0 auto;
+}
+
+.detailsHeader .details-header-status .orderTitle {
+  font-size: large;
+  margin: 0;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.pedido {
+ /*  margin-bottom: 20%; */
+}
+.details-header-status{
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+}
+
+.details-main-content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.preparando{
+  color: #999900;
+  font-weight: bold;
+}
+.entregue{
+  color: green;
+  font-weight: bold;
+}
+.pendente{
+  color: darkred;
+  font-weight: bold;
+}

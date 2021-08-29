@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.registerPage {
+  background-image: url('../../images/chalkboard-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* padding-bottom: 30%;
+  padding-top: 7%; */
+}
+
+.registerTitle {
+  text-align: center;
+  color:white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: xx-large;
+}
+
+.column-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-register label {
+  color:white;
+  font-family: 'Permanent Marker', cursive;
+  font-size: x-large;
+  padding: 3%;
+}
+
+.column-register input {
+  height: 2rem;
+  align-self: flex-start;
+  border: none;
+}
+
+.column-register fieldset {
+  border: none;
+}
+
+.register-inputs {
+  width: 100%;
+}
+
+.column-register > button[type=submit] {
+  margin-left:  3%;
+  margin-right:  3%;
+  /* width: 51%; */
+
+  border: none;
+  border-radius: 5px;
+  
+  font-size: x-large;
+  text-align: center;
+  text-decoration: none;
+  padding: 5%;
+  margin-left: 2%;
+  cursor: pointer;
+
+}
+
+.checkbox #seller {
+  vertical-align: middle;
+}
+/*  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.column-register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vw;
+  width: 100vw;
+  vertical-align: middle;
+}
+
+.column-register fieldset {
+  border: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.column-register label {
+  font-size: large;
+  margin: 5px 0;
+  width: 80%;
+}
+
+.column-register input {
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 5px 2px 1px #cccccc;
+}
+
+.email-alert {
+  color: #ff0000;
+  text-decoration: wavy;
+}
+
+.column-register .checkbox {
+  text-align: center;
+  
+}
+
+.column-register button {
+  font-size: larger;
+  position: absolute;
+  bottom: 10px;
+  margin: 5px;
+  width: 50%;
+  height: 40px;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 5px 2px 1px #cccccc;
+  background-color: #dddddd;
+}
+
+label input:not([type='checkbox']) {
+  padding: 5px;
+  width: 100%;
+}
+
+label input[type='checkbox'] {
+  margin: 10px;
+}
+
+button.ready {
+  background-color: #00ff00;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+} */

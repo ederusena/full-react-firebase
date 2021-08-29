@@ -1,0 +1,122 @@
+.header {
+  align-items: center;
+  background-image: url('../../images/menuBg.jpg');
+  background-size: cover;
+  box-shadow: 0 7px 7px rgba(83, 77, 77, 0.47);
+  border-radius: 3px;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 12vh;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.logoHeader {
+  height: 90px;
+}
+
+.burguerBtn {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 1%;
+  padding: 1%;
+}
+
+.title {
+  margin-left: 3%;
+  padding: 1%;
+}
+
+.sideBar {
+  /* background-image: url('../../images/oldpapertexture.jpg'); */
+  background-image: url('../../images/—Pngtree—red\ recipe\ background\ picture_1191495.jpg') ; /* cardapio */
+  /* background-size: cover; */
+  width: 100%;
+  /* cardapio */
+  background-size:100% 100%;
+  box-shadow: 0 0 8px 8px black inset;
+  /* -------  */
+  float: left;
+  /* display: flex;
+  flex-direction: column; */
+  height: 85vh;
+  /* margin-top: 100px; */
+  /* position: fixed; */
+  padding: 2%;
+  position: absolute;
+  /* text-decoration: none; */
+  /* transform: translateX(-30rem); */
+  width: 25%;
+  z-index: 1;
+}
+/* .sideBar.open {
+  transform: translateX(0);
+} */ 
+.menuBtn {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 7%;
+  padding: 1%;
+  font-size: larger;
+}
+.menuBtn:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+Link {
+  color: black;
+  text-decoration: none;
+  padding: 2%;
+}
+
+.menuBorder {
+  padding: 0;
+  margin: 0;
+  padding: 0 2%;
+  border-style: solid;
+  border:brown;
+  /* ----cardapio-abaixo--- */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 88vh;
+}
+.menuBorder div {
+  
+  padding: 16vh 8% 7vh 8%;
+  /* margin-right: 1%; */
+  color: yellow;
+}
+
+.menuBorder h2 {
+  text-align: center;
+}
+
+.menuBorder div .ExitBtn{
+  text-align: center;
+}
+
+.menuBorder div ul{
+  margin: 0;
+  padding: 1em;
+  text-align: justify;
+}
+.menuBorder div ul li a{
+  color: yellow;
+}
+/* ----cardapio-acima--- */
+@media screen and ( min-width : 300px ) and ( max-width : 569px ) {
+
+  .sideBar {
+    width: 63%;;
+  }
+
+}

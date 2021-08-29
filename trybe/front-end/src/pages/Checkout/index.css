@@ -1,0 +1,117 @@
+.Checkout {
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.total {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2%;
+  text-align: right;
+  font-size:larger ;
+}
+
+table.cartItems{
+  width: 100%;
+  /* border: 1px solid black; */
+}
+table.cartItems th{
+  text-align: center;
+  /* border: 1px solid black; */
+}
+.cartItems td{
+margin: auto;
+}
+
+.checkoutitle {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2%;
+}
+
+.inputs {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2%;
+  
+
+}
+.input-rua {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2%;
+  width: 70%;
+}
+.input-rua input{
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+.input-numero {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2%;
+  width: 30%;
+}
+.input-numero input {
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+.finishBtn {
+  background-image: url('../../images/images.jpeg');
+  background-size: cover;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  margin: auto;
+  padding: 3%;
+  width: 47%;
+}
+
+.pedido {
+  background-color: rgba(255, 255, 255, 0.73);
+  margin: 3%;
+  border-radius: 5px;
+}
+
+.deliveryForm {
+  background-color: rgba(255, 255, 255, 0.73);
+  margin: 3%;
+  border-radius: 5px;
+  padding-bottom: 3%;
+}
+
+.checkout-forms-inputs {
+  display: flex;
+}
+
+tr.legenda {
+  /* font-weight: bold; */
+  /* display: flex;
+  justify-content: space-around; */
+}
+
+tr.legenda-small{
+  display: none;
+}
+
+@media screen and ( min-width : 300px ) and ( max-width : 569px ) {
+
+  tr.legenda {
+    display: none;
+  }
+  span.legenda {
+    display: none;
+  }
+
+  tr.legenda-small{
+    display: block;
+  }
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+  margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./images/newBg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow-y: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Eder help */
+.MuiGrid-container {
+  height: 100%;
+}
+.chat-admin-list-message{
+  height: 100%;
+  width: 100%;
+}
