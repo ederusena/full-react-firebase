@@ -1,5 +1,7 @@
 const functions = require("firebase-functions");
 var admin = require('firebase-admin');
+const firebase = require('firebase/app').default;
+require('firebase/auth');
 const app = require("express")();
 
 admin.initializeApp({
@@ -18,7 +20,7 @@ const config = {
   measurementId: "G-B49H3Z627G"
 };
 
-const { firebase } = require('firebase');
+
 firebase.initializeApp(config);
 
 const db = admin.firestore();
@@ -105,7 +107,7 @@ app.post("/signup", (req, res) => {
     .get()
     .then((doc) => {
       if (doc.exists) {
-        return res.status(400).json({ handle: "this handle is already taken" });
+        return res.status(400).json({ handle: "Este usuário já foi cadastrado" });
       } else {
         return firebase
           .auth()
@@ -143,13 +145,15 @@ app.post("/login", (req, res) => {
   const user = {
     email: req.body.email,
     password: req.body.password,
+    confirmPassword: req.body.confirmPassword,
   };
 
   let errors = {};
 
   if(isEmpty(user.email)) errors.email = "Email must not be empty";
   if(isEmpty(user.password)) errors.password = "Password must not be empty";
-
+  if(user.password !== user.confirmPassword) errors.confirmPassword = "Passwords must match";
+  
   if(Object.keys(errors).length > 0) return res.status(400).json(errors);
 
   firebase
